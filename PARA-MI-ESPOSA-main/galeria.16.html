@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>FOTOS DE MI ESPOSA Y YO🤎</title>
+
+    <link rel="stylesheet" href="FOTOS.css">
+    <link rel="icon" href="foto16.1.2png.jpeg" type="image/jpeg">
+    <link rel="mensaje final.html">
+  
+    </head>
+    <body id="fondo1"> 
+         <h2>tiempo que llevamos juntos🤎</h2>
+            <p id="contador"></p>
+        <header>
+         <h1>fotos de nosotros</h1>
+
+         <audio autoplay loop>
+        
+         </audio>
+         <script src="javascript.js"></script>
+         <script>
+setInterval(() => {
+    let corazon = document.createElement("div");
+    corazon.innerHTML = "🤎";
+    corazon.classList.add("corazon");
+
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.fontSize = (20 + Math.random() * 20) + "px";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+        corazon.remove();
+    }, 5000);
+}, 300); 
+</script>
+        <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+        </div>
+
+        
+
+
+            
+        </script>
+
+<div class="libreta">
+
+    <div class="pagina">
+ <img src="foto16.png.jpeg" width="300px">
+<P class="A">TU ERES</P></div>
+
+    <div class="pagina">
+ <img src="foto16.1.1png.jpeg" width="200px">
+<p class="B">CONMIGO</p></div>
+
+    <div class="pagina">
+ <img src="foto16.1.2png.jpeg" width="200px">
+<P class="C"></P></div>
+
+    <div class="pagina">
+ <img src="foto16.1.3png.jpeg" width="200px">
+<P class="D">ERES TODO</P></div>
+    <div class="pagina">    
+ <img src="foto16.1.4png.jpeg" width="200px">
+<P class="E">ASI ERES TU</P></div>
+
+    <div class="pagina">
+ <img src="foto16.1.5png.jpeg" width="200px">
+<P class="F">TE VOY AMAR</P></div>
+
+    <div class="pagina">
+ <img src="foto16.1.6png.jpeg" width="200px">
+<P class="G">DESEANDOTE</P></div>
+
+    <div class="pagina">
+ <img src="foto16.1.7png.jpeg" width="200px">
+<P class="H">ERES EL AMOR DE MI VIDA</P></div>
+
+<div class="pagina">
+<img src="foto16.1.8.jpeg" width="200px">
+<P class="J"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.9.jpeg" width="200px">
+<P class="K"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.10.jpeg" width="200px">
+<P class="L"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.11.jpeg" width="200px">
+<P class="Ñ"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.12.jpeg" width="200px">
+<P class="M"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.13.jpeg" width="200px">
+<P class="N"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.14.jpeg" width="200px">
+<P class="X"></P>TE AMO</div>
+
+<div class="pagina">
+<img src="foto16.1.15.jpeg" width="200px">
+<P class="P"></P>TE AMO</div>
+
+<div class="pagina">
+
+<a href="mensaje final.html">
+     <button class="boton">siguiente🤎</button>
+</a>
+<a href="pagina.2.html">
+        <button class="boton3"><<<</button>
+    </a>
+</div>
+
+
+</header>
+
+
+  <script>
+const fechaInicio = new Date("2025-08-16");
+
+function actualizarContador() {
+    const ahora = new Date();
+    const diferencia = ahora - fechaInicio;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    document.getElementById("contador").innerHTML =
+        `${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos 🤎`;
+}   
+setInterval(actualizarContador, 1000);
+actualizarContador();
+</script>  
+
+<script>
+const paginas = document.querySelectorAll(".pagina");
+let actual = 0;
+
+paginas.forEach((pagina, i) => {
+    pagina.style.zIndex = paginas.length - i;
+});
+
+document.querySelector(".libreta").addEventListener("click", () => {
+
+    if (actual < paginas.length) {
+
+        paginas[actual].style.transform = "rotateY(-180deg)";
+        paginas[actual].style.zIndex = actual;
+
+        actual++;
+    }
+
+});
+</script>
+
+    </body>
+</html>
+
